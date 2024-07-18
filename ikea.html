@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <script>
+    tailwind.config = {
+        theme: {    screens: {
+          'sm': '640px',
+          // => @media (min-width: 640px) { ... }
+    
+          'md': '768px',
+          // => @media (min-width: 768px) { ... }
+    
+          'lg': '1024px',
+          // => @media (min-width: 1024px) { ... }
+    
+          'xl': '1280px',
+          // => @media (min-width: 1280px) { ... }
+    
+          '2xl': '1536px',
+          // => @media (min-width: 1536px) { ... }
+        },
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+  
+</head>
+<body>
+    <div>
+        <nav class="h-20  px-8 flex justify-between fixed w-[100vw]">
+            <!-- left -->
+            <div class="w-1/2 flex  items-center ">
+                <img class="w-36" src="./ssn5.png" alt="Logo">
+                <form class="lg:w-[400px]xl: w-[500px] hidden lg:flex justify-between items-center px-4 py-3 rounded-full bg-gray-200 hover:bg-gray-300">
+                   <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="What are you looking for?" class="bg-transparent border-none outline-none">
+                   </div>
+                   <i class="fa-solid fa-camera"></i>
+                </form>
+            </div>
+
+            <!-- right -->
+            <div class="flex  items-center gap-2">
+
+               <i class="fa-solid fa-truck"></i>
+                    <p class="hidden lg:flex "> enter postal code</p>
+                </div> 
+               
+                <div  class="lg:flex flex items-center gap-2 ">
+                    <i class="fa-solid fa-store"></i>
+                    <p class="hidden lg:flex">Select store</p>
+                </div>
+                <div  class="flex items-center gap-2  ">
+                    <i class="fa-solid fa-user"></i>
+                    <p  class="hidden lg:flex">Hey! log in</p>
+                </div>
+             
+                <div  class="flex items-center gap-2 ">
+
+                    <i class="fa-regular fa-heart"></i>
+
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+
+
+                
+
+
+
+             </div>
+
+        </nav>
+
+    </div>
+
+
+
+
+
+</body>
+</html>

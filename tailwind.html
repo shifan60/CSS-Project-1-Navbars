@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<title>Document</title>
+<script>
+    tailwind.config = {
+      theme: {    screens: {
+        'sm': '640px',
+        // => @media (min-width: 640px) { ... }
+  
+        'md': '768px',
+        // => @media (min-width: 768px) { ... }
+  
+        'lg': '1024px',
+        // => @media (min-width: 1024px) { ... }
+  
+        'xl': '1280px',
+        // => @media (min-width: 1280px) { ... }
+  
+        '2xl': '1536px',
+        // => @media (min-width: 1536px) { ... }
+      },
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+
+</head> 
+
+    <body>
+ 
+          <div class="bg-black text-gray-200 min-h-screen">                
+    <!--Navbar-->
+    <nav class="h-20 bg-slate-900 px-8 flex justify-between fixed w-[100vw]">
+        <div class=" flex h-20 items-center">
+            <img class="w-12" src="./ssn4.png" alt="Logo">
+            <p class="text-2xl font-medium  " >tailwindcss</p>
+        </div>
+        <div class="h-20- flex items-center"> 
+            <ul class="hidden md:flex gap-6 border-r border-gray-700 px-6">
+                <li>Docs</li>
+                <li>Components</li>
+                <li>Blog</li>
+                <li>showcase</li>
+            </ul>
+            
+            <div class="px-6 flex gap-3 items-center">
+               <div class="hidden md:flex gap-3 h-full items-center">
+                <div class="relative w-6">
+                    <i class="fa-regular fa-moon"></i><span class="absolute bottom-2 right+1">+</span>
+
+            </div>
+            <i class="fa-brands fa-github"></i>
+        </div>
+        <div class=" flex md:hidden gap-4 h-full items-center"></div>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+               </div>
+    </nav>
+    <div class="flex pt-20 pb-5 justify-center">
+        <h1 class="text-5xl text-clifford cursor-pointer">Hello</h1>
+    </div>  
+<p class="text-center">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci consectetur maxime laborum, sit ea cum quisquam numquam in itaque, voluptatibus commodi tenetur est. Rerum, libero deleniti. Quam ipsum doloribus repellat?
+
+</p>
+<div class=" h-[40vh] flex justify-center items-center">
+    <button
+    class="bg-sky-600 hover:bg-sky-700 hover:text-red-500 active:bg-sky-500 font-semibold px-8 py-3 rounded-full"
+    >
+    Click Here
+</button>
+</div>
+      <div class="flex gap-6 justify-center items-center flex-col">
+        <h2 class="text-3xl text-twitterBlue">Hey</h2>
+        <p class="w-1/2 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum itaque eligendi mollitia aliquid odit, minus dicta, exercitationem doloribus quas culpa, voluptatibus amet nostrum? Esse ipsum necessitatibus doloribus fugit tempore? Pariatur.</p>
+        <button class="hover:text-red-500 active:bg-lime-500 font-semibold px-8 py-3 rounded-md  bg-lime-500">Second Button</button>
+      </div>
+</div>
+</body>
+</html>
